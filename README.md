@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## My page todo-list-react
 
-![Marta-todo-list-react](https://github.com/martaCharlie/todo-list-react/blob/main/public/print%20screen.png?raw=true)
+![Marta-currency-converter-react](https://github.com/martaCharlie/currency-converter-react/blob/main/public/Zrzut%20ekranu%202023-04-21%20.png?raw=true)
 
 ### Demo
 
