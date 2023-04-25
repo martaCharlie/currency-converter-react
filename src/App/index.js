@@ -4,7 +4,7 @@ import { currencies } from "./currencies";
 import "./App.css";
 
 function App() {
-  const [result, setResult] = useState();
+  const [result, setResult] = useState(0);
 
   const calculateResult = (currency, amount) => {
     const rate = currencies.find(({ short }) => short === currency).rate;
