@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { currencies } from "../currencies";
 import { Result } from "./Result";
-import "./style.css";
+import { LabelText, Header, Button, Field } from "./styled";
 
 export const Form = ({ calculateResult, result }) => {
   const [currency, setCurrency] = useState(currencies[0].short);
@@ -14,15 +14,15 @@ export const Form = ({ calculateResult, result }) => {
 
   return (
     <form className="form" onSubmit={onSubmit}>
-      <h1 className="form__header">Przelicznik walut</h1>
+      <Header>Przelicznik walut</Header>
       <p>
         <label>
-          <span className="form__labelText">PLN* </span>
-          <input
+          <LabelText>PLN* </LabelText>
+          <Field
+            as="input"
             value={amount}
             onChange={({ target }) => setAmount(target.value)}
             placeholder="wpisz kwotę w złotówkach"
-            className="form__field"
             type="number"
             required
             step="0.01"
@@ -32,9 +32,9 @@ export const Form = ({ calculateResult, result }) => {
       </p>
       <p>
         <label>
-          <span className="form__labelText">Waluta:</span>
-          <select
-            className="form__field"
+          <LabelText>Waluta:</LabelText>
+          <Field
+            as="select"
             value={currency}
             onChange={({ target }) => setCurrency(target.value)}
           >
@@ -43,11 +43,11 @@ export const Form = ({ calculateResult, result }) => {
                 {currency.name}
               </option>
             ))}
-          </select>
+          </Field>
         </label>
       </p>
       <p>
-        <button className="form__button">Przelicz!</button>
+        <Button>Przelicz!</Button>
       </p>
 
       <Result result={result} />
