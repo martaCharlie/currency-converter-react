@@ -19,6 +19,8 @@ https://martacharlie.github.io/currency-converter-react/
 - Create React App
 - webpack
 - Babel
+- Styled Components
+- Custom Hooks
 
 ##### Available Scripts
 
