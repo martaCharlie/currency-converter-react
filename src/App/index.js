@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Form } from "./Form";
 import { currencies } from "./currencies";
 import { Clock } from "./Clock";
-import { StyledApp } from "./styled";
+import { Container } from "./Container/styled";
 
 function App() {
   const [result, setResult] = useState(0);
@@ -18,10 +18,10 @@ function App() {
   };
 
   return (
-    <StyledApp>
+    <Container>
       <Clock />
       <Form result={result} calculateResult={calculateResult} />
-    </StyledApp>
+    </Container>
   );
 }
 
