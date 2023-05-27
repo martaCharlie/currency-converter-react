@@ -18,5 +18,9 @@ html {
   background-image: url(${background});
   background-size: cover;
   background-position: center;
+
+  button {
+    cursor: pointer;
+  }
 }
 `;
